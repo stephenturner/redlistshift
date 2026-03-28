@@ -1,3 +1,5 @@
+# Scratch code playing around --------------------------------------------
+
 # Read in and process data with rredlist ---------------------------------
 # https://docs.ropensci.org/rredlist/
 
@@ -16,7 +18,6 @@ catcodes <-
 system.time({
   dl <- lapply(catcodes, rl_categories)
   saveRDS(dl, file = "redlist_raw.rds")
-  beepr::beep()
 })
 
 catcodes_reduced <- c("LC", "NT", "VU", "EN", "CR", "RE", "EW", "EX")
